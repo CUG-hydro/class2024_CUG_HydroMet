@@ -1,0 +1,8 @@
+{
+  "markdown.marp.themes": [
+    "./themes/my-theme.css"
+    // "D:/Documents/OneDrive/水文气象学/class2022_CUG_HydroMet/themes/my-theme.css"
+    // "https://example.com/foo/bar/custom-theme.css",
+    // "./themes/your-theme.css"
+  ]
+}

@@ -1,0 +1,87 @@
+/* @theme my-theme */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); */
+@import 'default';
+
+/*Add "Page" prefix and total page number*/
+/* section::after {
+  content: 'Page ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+} */
+
+h1,
+h2,
+h3 {
+  color: blue;
+}
+
+h1 {
+  font-size: 60px
+}
+
+h2 {
+  font-size: 42px
+}
+
+h3 {
+  font-size: 40px
+}
+
+h4 {
+  font-size: 36px
+}
+
+p {
+  margin: 0em 0em 0.1em 0em
+    /* top right bottom left */
+}
+
+section[data-marpit-advanced-background] {
+  padding: 40px;
+}
+
+.katex-display {
+  display: block;
+  line-height: 0.9;
+  /* font-size: 10; */
+  /* margin: 1em 0; */
+  text-align: center;
+}
+
+blockquote {
+  margin: 0.2em 0em 0.2em 0em
+}
+
+
+/* https://blog.csdn.net/Jiajikang_jjk/article/details/80319059 */
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.leftpane, .middlepane, .rightpane {
+  padding: 20px;
+}
+
+.leftpane {
+  width: 33%;
+  height: 100%;
+  float: left;
+  /* background-color: rosybrown; */
+  border-collapse: collapse;
+}
+
+.middlepane {
+  width: 34%;
+  height: 100%;
+  float: left;
+  /* background-color: royalblue; */
+  border-collapse: collapse;
+}
+
+.rightpane {
+  width: 33%;
+  height: 100%;
+  position: relative;
+  float: right;
+  /* background-color: yellow; */
+  border-collapse: collapse;
+}
