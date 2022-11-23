@@ -2,6 +2,12 @@
 
 > Dongdong Kong
 
+**课件链接**：
+
+- <https://gitlab.com/CUG-hydro/class2022_CUG_HydroMet>
+
+- <https://github.com/CUG-hydro/class2022_CUG_HydroMet>
+
 ## 1. 如何访问Github
 
 ```R
