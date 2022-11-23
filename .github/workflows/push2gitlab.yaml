@@ -1,0 +1,26 @@
+name: PushGitlab
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with: 
+        fetch-depth: 0 
+
+    - name: Push To Gitlab
+      env:
+        token: ${{ secrets.GITLAB_ACCESS_TOKEN }}
+      run: |
+        echo Starting to push repo to gitlab
+        git config user.name "Dongdong Kong"
+        git config user.email "kongdd@users.noreply.github.com"
+        git remote set-url origin "https://oauth2:${token}@gitlab.com/CUG-hydro/class2022_CUG_HydroMet.git"
+        git push origin master -f
