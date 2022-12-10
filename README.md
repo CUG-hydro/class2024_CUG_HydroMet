@@ -37,3 +37,11 @@
 ## 4. 版权
 
 > 版权归Dongdong Kong所有。禁止转载、禁止将课件搬到其他网站。
+
+## 5. 相关链接
+
+- R语言水文气象函数库：<https://github.com/CUG-hydro/hydroTools>
+
+- ncl水汽通量计算：<https://github.com/CUG-hydro/IVT>
+
+- python位势高度、风场绘图：<https://github.com/CUG-hydro/CUG-HydroMeteorology.py>
