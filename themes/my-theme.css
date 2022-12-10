@@ -1,7 +1,8 @@
 /* @theme my-theme */
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); */
 @import 'default';
-
+/* @import 'utilities.min.css'; */
+@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
 /*Add "Page" prefix and total page number*/
 /* section::after {
   content: 'Page ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
@@ -84,4 +85,28 @@ blockquote {
   float: right;
   /* background-color: yellow; */
   border-collapse: collapse;
+}
+
+img[alt~="top-right"] {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+img[alt~="top-left"] {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+img[alt~="bottom-right"] {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+img[alt~="bottom-left"] {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
 }
