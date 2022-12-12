@@ -1,0 +1,42 @@
+/* @theme beamer */
+@import 'default';
+
+/* block */
+.block:not(.footnote) {
+  background-color: #D8DEE9;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.block:not(.footnote)>p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.block:not(.footnote)>p:first-child {
+  padding-top: 10px;
+}
+
+.block-head {
+  padding-top: 5px !important;
+  background-color: #2E3440;
+  color: #ECEFF4;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 4px;
+}
+
+.info-head, .tip {
+  background-color: #5E81AC;
+}
+
+.warn-head, .warning {
+  background-color: #BF616A;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 40px;
+  font-size: 0.7em;
+  color: #434C5E;
+}
