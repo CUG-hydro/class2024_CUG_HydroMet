@@ -25,6 +25,9 @@
 
 详见：[如何编译课件.md](inst/如何编译课件.md)
 
+Powered by:
+
+- <https://gist.github.com/yhatt/8931dd98769bcc1c5b4b92fd1234a190>
 
 ## 3. 参考教材
 

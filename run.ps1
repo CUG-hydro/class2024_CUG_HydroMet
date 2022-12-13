@@ -6,7 +6,8 @@ function build_marp{
     $fin,
     # $fout,
     $options = "", 
-    $verbose = 1
+    $verbose = 1, 
+    $time = 1
   )
   # ./themes/beamer.css 
   # -o $fout 
@@ -16,9 +17,15 @@ function build_marp{
   if ($verbose) {
     Write-Output $cmd  
   }
-
-  # Measure-Command 
-  Invoke-Expression $cmd 
+  
+  if ($time) {
+    Measure-Command { Invoke-Expression $cmd }
+  } else {
+    Invoke-Expression $cmd 
+  }
+  
+  $fout = ($fin).Replace(".md", ".pdf")
+  SumatraPDF $fout
 }
 
 # $ext = "html"
@@ -30,7 +37,8 @@ $options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.he
 
 # build_marp "./ch05_第1讲-辐射与能量平衡.md" $options
 # build_marp "./ch05_第2讲-热浪研究方法.md" $options
-build_marp "./ch06_大气环流.md" $options
+# build_marp "./ch06_大气环流.md" $options
+build_marp "./ch07_天气系统.md" $options
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext" $options
 
 

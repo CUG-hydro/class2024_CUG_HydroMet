@@ -1,14 +1,3 @@
----
-marp: true
-paginate: true
-# size: 4:3
-# header: 'Header space'
-# footer: 'Footer space'
-title: 'marp-theme-nordic-beamer demo slide'
-theme: "my-theme"
-# theme: nordic-beamer
----
-
 <h1>水文气象学大纲</h1>
 
 
@@ -19,7 +8,6 @@ theme: "my-theme"
 ## 2. 大气基本要素
 
 ## 3. 位势高度与气压场
-
 
 ## 4. 水汽通量与暴雨分析
 

@@ -1,5 +1,6 @@
 /* @theme beamer */
-@import 'default';
+/* @import 'default'; */
+@import 'my-theme';
 
 /* block */
 .block:not(.footnote) {

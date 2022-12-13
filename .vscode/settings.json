@@ -6,5 +6,10 @@
     // "D:/Documents/OneDrive/水文气象学/class2022_CUG_HydroMet/themes/my-theme.css"
     // "https://example.com/foo/bar/custom-theme.css",
     // "./themes/your-theme.css"
-  ]
+  ],
+  "code-runner.executorMap": {
+    "ncl": "wsl ncl $fileName",
+    "mermaid": "mmdc -i $fileName"
+    // "ncl": "ncl",//这两个都可以
+  }
 }
