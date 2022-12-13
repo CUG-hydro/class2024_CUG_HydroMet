@@ -1,3 +1,14 @@
+---
+marp: true
+paginate: true
+# size: 4:3
+# header: 'Header space'
+# footer: 'Footer space'
+title: 'marp-theme-nordic-beamer demo slide'
+theme: "my-theme"
+# theme: nordic-beamer
+---
+
 <h1>水文气象学大纲</h1>
 
 
@@ -11,6 +22,8 @@
 
 
 ## 4. 水汽通量与暴雨分析
+
+---
 
 ## 5. 辐射、温度与热浪分析
 

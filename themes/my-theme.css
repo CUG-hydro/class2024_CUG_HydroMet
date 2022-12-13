@@ -1,8 +1,8 @@
 /* @theme my-theme */
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); */
 @import 'default';
-/* @import 'utilities.min.css'; */
-@import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css');
+@import 'utilities.min';
+/* @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css'); */
 /*Add "Page" prefix and total page number*/
 /* section::after {
   content: 'Page ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);

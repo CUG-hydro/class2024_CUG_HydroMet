@@ -10,7 +10,7 @@ function build_marp{
   )
   # ./themes/beamer.css 
   # -o $fout 
-  $Env:PUPPETEER_TIMEOUT=0
+  # $Env:PUPPETEER_TIMEOUT=0
   $cmd = "marp $fin --html --pdf --allow-local-files --theme ./themes/my-theme.css $options"
 
   if ($verbose) {
@@ -28,7 +28,8 @@ $options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.he
 # build_marp "./examples/high_level.md" "beamer_high" $options
 # build_marp "./examples/low_level.md" "beamer_low" $options
 
-
+# build_marp "./ch05_第1讲-辐射与能量平衡.md" $options
+# build_marp "./ch05_第2讲-热浪研究方法.md" $options
 build_marp "./ch06_大气环流.md" $options
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext" $options
 
