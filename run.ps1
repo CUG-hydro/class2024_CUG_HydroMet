@@ -5,8 +5,8 @@ function build_marp{
   param (
     $fin,
     # $fout,
-    $options = "", 
-    $verbose = 1, 
+    # $options = "",
+    $verbose = 1,
     $time = 1
   )
   # ./themes/beamer.css 
@@ -17,7 +17,7 @@ function build_marp{
   if ($verbose) {
     Write-Output $cmd  
   }
-  
+
   if ($time) {
     Measure-Command { Invoke-Expression $cmd }
   } else {
@@ -32,14 +32,14 @@ function build_marp{
 # $ext = "pdf"
 $options = ""
 $options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.headings
-# build_marp "./examples/high_level.md" "beamer_high" $options
-# build_marp "./examples/low_level.md" "beamer_low" $options
+# build_marp "./examples/high_level.md" "beamer_high"
+# build_marp "./examples/low_level.md" "beamer_low"
 
-# build_marp "./ch05_第1讲-辐射与能量平衡.md" $options
-# build_marp "./ch05_第2讲-热浪研究方法.md" $options
-# build_marp "./ch06_大气环流.md" $options
-build_marp "./ch07_天气系统.md" $options
-# build_marp "./examples/low_level.md" "pages/beamer_low.$ext" $options
+# build_marp "./ch05_第1讲-辐射与能量平衡.md"
+# build_marp "./ch05_第2讲-热浪研究方法.md"
+build_marp "./ch06_大气环流.md"
+# build_marp "./ch07_天气系统.md"
+# build_marp "./examples/low_level.md" "pages/beamer_low.$ext"
 
 
 # marp -h
