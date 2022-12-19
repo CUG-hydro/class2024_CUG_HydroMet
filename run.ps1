@@ -37,8 +37,8 @@ $options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.he
 
 # build_marp "./ch05_第1讲-辐射与能量平衡.md"
 # build_marp "./ch05_第2讲-热浪研究方法.md"
-build_marp "./ch06_大气环流.md"
-# build_marp "./ch07_天气系统.md"
+# build_marp "./ch06_大气环流.md"
+build_marp "./ch07_天气系统.md"
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext"
 
 

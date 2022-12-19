@@ -1,7 +1,7 @@
 /* @theme my-theme */
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); */
 @import 'default';
-@import 'utilities.min';
+/* @import 'utilities.min'; */
 /* @import url('https://unpkg.com/tailwindcss@^2/dist/utilities.min.css'); */
 /*Add "Page" prefix and total page number*/
 /* section::after {
@@ -58,34 +58,34 @@ blockquote {
   height: 100%;
 }
 
-.leftpane, .middlepane, .rightpane {
+/* .panel_left, .panel_mid, .panel_right {
   padding: 20px;
-}
+} */
 
-.leftpane {
-  width: 33%;
+.panel_left {
+  /* width: 33%; */
   height: 100%;
   float: left;
   /* background-color: rosybrown; */
   border-collapse: collapse;
 }
 
-.middlepane {
-  width: 34%;
+.panel_mid {
+  /* width: 34%; */
   height: 100%;
   float: left;
   /* background-color: royalblue; */
   border-collapse: collapse;
 }
 
-.rightpane {
-  width: 33%;
+.panel_right {
+  /* width: 33%; */
   height: 100%;
   position: relative;
   float: right;
   /* background-color: yellow; */
   border-collapse: collapse;
-}
+} 
 
 img[alt~="top-right"] {
   position: absolute;
