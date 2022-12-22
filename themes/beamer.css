@@ -1,6 +1,109 @@
 /* @theme beamer */
-/* @import 'default'; */
-@import 'my-theme';
+@import 'default';
+/* @import 'my-theme'; */
+
+h1,
+h2,
+h3 {
+  color: blue;
+}
+
+h1 {
+  font-size: 60px
+}
+
+h2 {
+  font-size: 42px
+}
+
+h3 {
+  font-size: 40px
+}
+
+h4 {
+  font-size: 36px
+}
+
+p {
+  margin: 0em 0em 0.1em 0em
+    /* top right bottom left */
+}
+
+section[data-marpit-advanced-background] {
+  padding: 40px;
+}
+
+.katex-display {
+  display: block;
+  line-height: 0.9;
+  /* font-size: 10; */
+  /* margin: 1em 0; */
+  text-align: center;
+}
+
+blockquote {
+  margin: 0.2em 0em 0.2em 0em
+}
+
+
+/* https://blog.csdn.net/Jiajikang_jjk/article/details/80319059 */
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* .panel_left, .panel_mid, .panel_right {
+  padding: 20px;
+} */
+
+.panel_left {
+  /* width: 33%; */
+  height: 100%;
+  float: left;
+  /* background-color: rosybrown; */
+  border-collapse: collapse;
+}
+
+.panel_mid {
+  /* width: 34%; */
+  height: 100%;
+  float: left;
+  /* background-color: royalblue; */
+  border-collapse: collapse;
+}
+
+.panel_right {
+  /* width: 33%; */
+  height: 100%;
+  position: relative;
+  float: right;
+  /* background-color: yellow; */
+  border-collapse: collapse;
+} 
+
+img[alt~="top-right"] {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+img[alt~="top-left"] {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+img[alt~="bottom-right"] {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+img[alt~="bottom-left"] {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
 
 /* block */
 .block:not(.footnote) {

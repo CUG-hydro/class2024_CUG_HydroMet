@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@marp-team/marp-cli": "^1.6.0",
-    "@marp-team/marp-core": "^3.0.2"
+    "@marp-team/marp-core": "^3.0.2",
+    "markdown-it-container": "^2.0.0"
   }
 }

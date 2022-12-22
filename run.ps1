@@ -9,10 +9,12 @@ function build_marp{
     $verbose = 1,
     $time = 1
   )
-  # ./themes/beamer.css 
+  $theme = "./themes/beamer.css"
+  # $theme = "./themes/my-theme.css"
+  #  
   # -o $fout 
   # $Env:PUPPETEER_TIMEOUT=0
-  $cmd = "marp $fin --html --pdf --allow-local-files --theme ./themes/my-theme.css $options"
+  $cmd = "marp $fin --html --pdf --allow-local-files --theme $theme $options"
 
   if ($verbose) {
     Write-Output $cmd  
