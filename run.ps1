@@ -7,7 +7,7 @@ function build_marp{
     # $fout,
     # $options = "",
     $verbose = 1,
-    $time = 1
+    $time = 0
   )
   $theme = "./themes/beamer.css"
   # $theme = "./themes/my-theme.css"
@@ -27,7 +27,7 @@ function build_marp{
   }
   
   $fout = ($fin).Replace(".md", ".pdf")
-  SumatraPDF $fout
+  # SumatraPDF $fout
 }
 
 # $ext = "html"
@@ -37,12 +37,18 @@ $options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.he
 # build_marp "./examples/high_level.md" "beamer_high"
 # build_marp "./examples/low_level.md" "beamer_low"
 
+build_marp "./ch01_绪论.md"
+build_marp "./ch02_大气的基本特征.md"
+build_marp "./ch03_位势高度与气压场.md"
+build_marp "./ch04_第1讲-水汽通量与暴雨分析.md"
+build_marp "./ch04_第2讲-辐散与垂直运动.md"
 # build_marp "./ch05_第1讲-辐射与能量平衡.md"
 # build_marp "./ch05_第2讲-热浪研究方法.md"
 # build_marp "./ch06_大气环流.md"
-build_marp "./ch07_天气系统.md"
+# build_marp "./ch07_天气系统.md"
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext"
 
+mv *.pdf 课件
 
 # marp -h
 # Usage:
