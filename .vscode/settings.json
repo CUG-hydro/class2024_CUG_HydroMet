@@ -13,8 +13,8 @@
     // "ncl": "ncl",//这两个都可以
   },
   "files.exclude": {
-    "**/*.json": true,
+    // "**/*.json": true,
     "**/*.js": true,
-    "**/.github": true,
+    // "**/.github": true,
   }
 }

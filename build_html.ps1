@@ -9,7 +9,8 @@ function build_marp{
   $theme = "./themes/beamer.css"
 
   $fout = ($fin).Replace(".md", ".html")
-  $cmd = "marp $fin -c .marprc.yml -o docs/$fout --html --allow-local-files --theme $theme $options"
+  # -c .marprc.yml
+  $cmd = "marp $fin -o docs/$fout --html --allow-local-files --theme $theme $options"
 
   if ($verbose) {
     Write-Output $cmd  
@@ -23,9 +24,11 @@ function build_marp{
 }
 
 $options = ""
+
+build_marp "index.md"
 build_marp "ch00_课程介绍.md"
 build_marp "ch01_绪论.md"
-build_marp "./ch01_补充_全球气候变化.md"
+build_marp "ch01_补充_全球气候变化.md"
 
 # build_marp "./examples/high_level.md" "beamer_high"
 # build_marp "./examples/low_level.md" "beamer_low"
