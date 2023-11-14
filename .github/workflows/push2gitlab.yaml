@@ -22,5 +22,5 @@ jobs:
         echo Starting to push repo to gitlab
         git config user.name "Dongdong Kong"
         git config user.email "kongdd@users.noreply.github.com"
-        git remote set-url origin "https://oauth2:${token}@gitlab.com/CUG-hydro/class2022_CUG_HydroMet.git"
+        git remote set-url origin "https://oauth2:${token}@gitlab.com/CUG-hydro/class2023_CUG_HydroMet.git"
         git push origin master -f

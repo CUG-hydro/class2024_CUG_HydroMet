@@ -1,6 +1,6 @@
 # npx @marp-team/marp-cli --server ./slides
 # SumatraPDF $fout
-$env:PUPPETEER_TIMEOUT = 60000
+$env:PUPPETEER_TIMEOUT = 3600
 
 function build_marp{
   param (
@@ -37,7 +37,7 @@ $options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.he
 # build_marp "./examples/high_level.md" "beamer_high"
 # build_marp "./examples/low_level.md" "beamer_low"
 
-# build_marp "./ch01_绪论.md"
+# build_marp "./debug.md"
 # build_marp "./ch02_大气的基本特征.md"
 # build_marp "./ch03_位势高度与气压场.md"
 # build_marp "./ch04_第1讲-水汽通量与暴雨分析.md"
@@ -46,9 +46,10 @@ $options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.he
 # build_marp "./ch05_第2讲-热浪研究方法.md"
 # build_marp "./ch06_大气环流.md"
 # build_marp "./ch07_天气系统.md"
-build_marp "./地信研究生_现代气候学_part1.md"
-build_marp "./地信研究生_现代气候学_part2.1.md"
-build_marp "./地信研究生_现代气候学_part2.2.md"
+# build_marp "./地信研究生_现代气候学_part1.md"
+# build_marp "./地信研究生_现代气候学_part2.1.md"
+# build_marp "./地信研究生_现代气候学_part2.2.md"
+build_marp "./ch01_气候变化背景.md"
 
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext"
 
