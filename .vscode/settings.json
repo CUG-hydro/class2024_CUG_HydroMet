@@ -11,5 +11,10 @@
     "ncl": "wsl ncl $fileName",
     "mermaid": "mmdc -i $fileName"
     // "ncl": "ncl",//这两个都可以
+  },
+  "files.exclude": {
+    "**/*.json": true,
+    "**/*.js": true,
+    "**/.github": true,
   }
 }
