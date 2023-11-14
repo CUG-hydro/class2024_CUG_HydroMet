@@ -15,9 +15,9 @@ function build_marp{
   # -o $fout 
   # $Env:PUPPETEER_TIMEOUT=0
   # $fout = ($fin).Replace(".md", ".pdf")
-  $fout = ($fin).Replace(".md", ".html")
-  
-  $cmd = "marp $fin -o html/$fout --html --allow-local-files --theme $theme $options"
+  # $fout = ($fin).Replace(".md", ".html")
+  # $cmd = "marp $fin -o docs/$fout --html --allow-local-files --theme $theme $options"
+  $cmd = "marp $fin --html --allow-local-files --theme $theme $options"
 
   if ($verbose) {
     Write-Output $cmd  
