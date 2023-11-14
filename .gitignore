@@ -4,7 +4,10 @@ test
 *.pdf
 node_modules/
 
-*.png
+# *.png
 *.mp4
 课件
 *backup*
+
+*地信研究生*
+*讲座*
