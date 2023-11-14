@@ -1,4 +1,21 @@
 $env:PUPPETEER_TIMEOUT = 3600
+$baseUrl = "https://github.com/CUG-hydro/class2023_CUG_HydroMet/blob/master/images/"
+$baseUrl = "https://raw.githubusercontent.com/CUG-hydro/class2023_CUG_HydroMet/master/images/"
+
+function ReplaceStringInFile {
+  param (
+    [string]$fin,
+    [string]$searchString,
+    [string]$replacementString
+  )
+  $fileContent = Get-Content -Path $fin -Raw
+  $newContent = $fileContent -replace $searchString, $replacementString
+  # $tempFin = [System.IO.Path]::GetTempFileName()
+  $tempFin="__temp__.md"
+  Set-Content -Path $tempFin -Value $newContent
+  
+  $tempFin
+}
 
 function build_marp{
   param (
@@ -7,9 +24,10 @@ function build_marp{
     $time = 0
   )
   $theme = "./themes/beamer.css"
-
   $fout = ($fin).Replace(".md", ".html")
-  # -c .marprc.yml
+
+  $fin = ReplaceStringInFile $fin "images/" $baseUrl
+  # -c .marprc.yml # lead to theme failed
   $cmd = "marp $fin -o docs/$fout --html --allow-local-files --theme $theme $options"
 
   if ($verbose) {
@@ -25,6 +43,8 @@ function build_marp{
 
 $options = ""
 
+pandoc README.md -o docs/README.html
+# build_marp "README.md"
 build_marp "index.md"
 build_marp "ch00_课程介绍.md"
 build_marp "ch01_绪论.md"

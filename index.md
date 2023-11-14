@@ -4,22 +4,24 @@ paginate: true
 # size: 4:3
 # header: 'Header space'
 # footer: 'Footer space'
-title: 'marp-theme-nordic-beamer demo slide'
+# title: 'marp-theme-nordic-beamer demo slide'
 theme: "my-theme"
 # theme: nordic-beamer
 ---
 
 <h1>2023CUG水文气象学课程</h1>
 
-> Dongdong Kong
+> Dongdong Kong, CUG
 
 <h3>目录</h3>
 
-[ch00_课程介绍.md](ch00_课程介绍.html)
+[README](README.html)
 
-[ch01_绪论.md](ch01_绪论.html)
+[ch00_课程介绍](ch00_课程介绍.html)
 
-[ch01_补充_全球气候变化.md](ch01_补充_全球气候变化.html)
+[ch01_绪论](ch01_绪论.html)
+
+[ch01_补充_全球气候变化](ch01_补充_全球气候变化.html)
 
 <br>
 
