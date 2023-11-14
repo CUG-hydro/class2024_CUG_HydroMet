@@ -14,7 +14,10 @@ function build_marp{
   # $theme = "./themes/my-theme.css"
   # -o $fout 
   # $Env:PUPPETEER_TIMEOUT=0
-  $cmd = "marp $fin --html --pdf --allow-local-files --theme $theme $options"
+  # $fout = ($fin).Replace(".md", ".pdf")
+  $fout = ($fin).Replace(".md", ".html")
+  
+  $cmd = "marp $fin -o html/$fout --html --allow-local-files --theme $theme $options"
 
   if ($verbose) {
     Write-Output $cmd  
@@ -26,14 +29,15 @@ function build_marp{
     Invoke-Expression $cmd 
   }
   
-  $fout = ($fin).Replace(".md", ".pdf")
   # SumatraPDF $fout
 }
 
 # $ext = "html"
 # $ext = "pdf"
 $options = ""
-$options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.headings
+# $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.headings
+# $cmd = "marp $fin --html --pdf --allow-local-files --theme $theme $options"
+
 # build_marp "./examples/high_level.md" "beamer_high"
 # build_marp "./examples/low_level.md" "beamer_low"
 # build_marp "./ch02_大气的基本特征.md"
@@ -47,9 +51,10 @@ $options = "--pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.he
 # build_marp "./地信研究生_现代气候学_part1.md"
 # build_marp "./地信研究生_现代气候学_part2.1.md"
 # build_marp "./地信研究生_现代气候学_part2.2.md"
-build_marp "./ch00_课程介绍.md"
-build_marp "./ch01_绪论.md"
-build_marp "./ch01_补充_全球气候变化.md"
+build_marp "index.md"
+build_marp "ch00_课程介绍.md"
+build_marp "ch01_绪论.md"
+# build_marp "./ch01_补充_全球气候变化.md"
 
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext"
 
