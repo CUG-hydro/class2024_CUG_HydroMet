@@ -36,7 +36,7 @@ theme: "beamer"
 
 ---
 
-![height:17cm](./images/ch02_大气的基本特征/温度三剑客.png)
+![height:17cm](images/ch02_大气的基本特征/温度三剑客.png)
 
 ---
 <style scoped>

@@ -32,11 +32,8 @@ function build_marp{
   # SumatraPDF $fout
 }
 
-# $ext = "html"
 # $ext = "pdf"
-$options = ""
 $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #  --pdf-outlines.headings
-# $cmd = "marp $fin --html --pdf --allow-local-files --theme $theme $options"
 
 # build_marp "./examples/high_level.md" "beamer_high"
 # build_marp "./examples/low_level.md" "beamer_low"
@@ -53,7 +50,9 @@ $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #  --pdf-outli
 # build_marp "./地信研究生_现代气候学_part2.2.md"
 build_marp "ch00_课程介绍.md"
 build_marp "ch01_绪论.md"
-build_marp "./ch01_补充_全球气候变化.md"
+build_marp "ch01_补充_全球气候变化.md"
+
+build_marp "ch02_大气的基本特征.md"
 
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext"
 
