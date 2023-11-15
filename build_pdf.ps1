@@ -51,8 +51,8 @@ $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #  --pdf-outli
 build_marp "ch00_课程介绍.md"
 build_marp "ch01_绪论.md"
 build_marp "ch01_补充_全球气候变化.md"
-
-build_marp "ch02_大气的基本特征.md"
+build_marp "ch01_补充_研究方法.md"
+# build_marp "ch02_大气的基本特征.md"
 
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext"
 
