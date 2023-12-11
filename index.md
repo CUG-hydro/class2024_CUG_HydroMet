@@ -11,7 +11,7 @@ theme: "my-theme"
 
 <h1>2023CUG水文气象学课程</h1>
 
-> Dongdong Kong, CUG
+<!-- > Dongdong Kong, CUG -->
 
 <h3>目录</h3>
 
@@ -25,10 +25,12 @@ theme: "my-theme"
 
 [ch02_大气的基本特征](ch02_大气的基本特征.html)
 
+[ch03_位势高度与气压场](ch03_位势高度与气压场.html)
+
 <br>
 
 **课件链接**：
 
-- <https://gitlab.com/CUG-hydro/class2023_CUG_HydroMet>
+<!-- - <https://gitlab.com/CUG-hydro/class2023_CUG_HydroMet> -->
 
-- <https://github.com/CUG-hydro/class2023_CUG_HydroMet>
+ <https://github.com/CUG-hydro/class2023_CUG_HydroMet>

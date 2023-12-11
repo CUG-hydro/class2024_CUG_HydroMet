@@ -44,12 +44,15 @@ function build_marp{
 $options = ""
 
 # build_marp "README.md"
+# build_marp "2023期满考核.md"
+build_marp "ch03_位势高度与气压场.md"
 build_marp "ch02_大气的基本特征.md"
-build_marp "ch01_绪论.md"
+build_marp "ch01_补充_天气学网站.md"
 build_marp "ch01_补充_全球气候变化.md"
+build_marp "ch01_绪论.md"
 build_marp "ch00_课程介绍.md"
 build_marp "index.md"
-pandoc README.md -o docs/README.html
+# pandoc README.md -o docs/README.html
 
 # build_marp "./examples/high_level.md" "beamer_high"
 # build_marp "./examples/low_level.md" "beamer_low"

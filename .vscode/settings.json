@@ -16,5 +16,6 @@
     // "**/*.json": true,
     "**/*.js": true,
     // "**/.github": true,
-  }
+  },
+  "editor.inlineSuggest.showToolbar": "onHover"
 }
