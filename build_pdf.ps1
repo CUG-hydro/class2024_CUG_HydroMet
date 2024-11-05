@@ -42,8 +42,8 @@ $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #
 # build_marp "./ch05_辐射三定律.md"
 # build_marp "./ch05_热浪研究方法.md"
 # build_marp "./ch05_太阳辐射.md"
-build_marp "./ch06_大气环流.md"
-build_marp "./ch07_天气系统.md"
+# build_marp "./ch06_大气环流.md"
+# build_marp "./ch07_天气系统.md"
 
 # build_marp "./地信研究生_现代气候学_part1.md"
 # build_marp "./地信研究生_现代气候学_part2.1.md"
@@ -51,7 +51,7 @@ build_marp "./ch07_天气系统.md"
 
 # build_marp "./求职/2023期满考核_V2.md"
 
-# build_marp "ch00_课程介绍.md"
+build_marp "ch00_课程介绍.md"
 # build_marp "ch01_绪论.md"
 # build_marp "ch01_补充_全球气候变化.md"
 # build_marp "ch01_补充_天气学网站.md"

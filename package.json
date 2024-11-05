@@ -3,8 +3,8 @@
   "license": "WTFPL",
   "private": true,
   "dependencies": {
-    "@marp-team/marp-cli": "^3.3.0",
-    "@marp-team/marp-core": "^3.0.2",
-    "markdown-it-container": "^3.0.0"
+    "@marp-team/marp-cli": "^4.0.2",
+    "@marp-team/marp-core": "^4.0.0",
+    "markdown-it-container": "^4.0.0"
   }
 }

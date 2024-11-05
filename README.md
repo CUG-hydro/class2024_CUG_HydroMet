@@ -1,4 +1,4 @@
-<h1>2023CUG水文气象学课程</h1>
+<h1>2024CUG水文气象学课程</h1>
 
 <https://cug-hydro.github.io/class2023_CUG_HydroMet/>
 
@@ -25,11 +25,9 @@
 
 ## 2. 如何把课件从md编译成pdf
 
-详见：[如何编译课件.md](inst/如何编译课件.md)
+课件全部采用Marp编写，<https://marpit.marp.app/>，一种快速PPT制作方法。
 
-Powered by:
-
-- <https://gist.github.com/yhatt/8931dd98769bcc1c5b4b92fd1234a190>
+编译方法详见：[如何编译课件.md](inst/如何编译课件.md)。
 
 ## 3. 参考教材
 
