@@ -52,11 +52,11 @@ $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #
 # build_marp "./求职/2023期满考核_V2.md"
 
 build_marp "ch00_课程介绍.md"
-# build_marp "ch01_绪论.md"
-# build_marp "ch01_补充_全球气候变化.md"
-# build_marp "ch01_补充_天气学网站.md"
-# build_marp "ch02_大气的基本特征.md"
+build_marp "ch01_绪论.md"
+build_marp "ch01_补充_全球气候变化.md"
+build_marp "ch01_补充_天气学网站.md"
 
+# build_marp "ch02_大气的基本特征.md"
 # build_marp "./examples/low_level.md" "pages/beamer_low.$ext"
 
 # mv *.pdf 课件

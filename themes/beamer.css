@@ -2,6 +2,10 @@
 @import 'default';
 /* @import 'my-theme'; */
 
+ol {
+  padding-inline-start: 25px;
+}
+
 h1,
 h2,
 h3 {
@@ -80,6 +84,13 @@ blockquote {
   /* background-color: yellow; */
   border-collapse: collapse;
 } 
+
+
+img[alt~="center"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 img[alt~="top-right"] {
   position: absolute;
