@@ -1,6 +1,6 @@
 # npx @marp-team/marp-cli --server ./slides
 # SumatraPDF $fout
-$env:PUPPETEER_TIMEOUT = 3600
+$env:PUPPETEER_TIMEOUT = 36000
 
 function build_marp{
   param (
@@ -35,12 +35,14 @@ function build_marp{
 $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #
 # $options = "--pptx"
 
-# build_marp "./ch02_大气的基本特征.md"
 # build_marp "./ch03_位势高度与气压场.md"
 # build_marp "./ch04_第1讲-水汽通量与暴雨分析.md"
 # build_marp "./ch04_第2讲-辐散与垂直运动.md"
-# build_marp "./ch05_辐射三定律.md"
-# build_marp "./ch05_热浪研究方法.md"
+
+# build_marp "ch02_基础的水文气象变量.md"
+build_marp "./ch3.1_辐射与能量平衡.md"
+build_marp "./ch3.2_辐射三定律.md"
+
 # build_marp "./ch05_太阳辐射.md"
 # build_marp "./ch06_大气环流.md"
 # build_marp "./ch07_天气系统.md"
@@ -52,7 +54,7 @@ $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #
 # build_marp "./求职/2023期满考核_V2.md"
 
 # build_marp "ch00_课程介绍.md"
-build_marp "./汇报/湖北山洪项目2024.md"
+# build_marp "./汇报/湖北山洪项目2024.md"
 # build_marp "ch01_绪论.md"
 # build_marp "ch01_补充_全球气候变化.md"
 # build_marp "ch01_补充_天气学网站.md"

@@ -1,3 +1,14 @@
+---
+marp: true
+paginate: true
+# size: 4:3
+# header: 'Header space'
+# footer: 'Footer space'
+title: 'ch03_辐射与能量平衡'
+# theme: nordic-beamer
+theme: 'my-theme'
+---
+
 # 1. 辐射的基本定理
 
 <h2>黑体 (Blackbody)</h2>
