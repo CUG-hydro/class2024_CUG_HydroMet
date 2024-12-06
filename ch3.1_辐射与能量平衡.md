@@ -86,6 +86,7 @@ $$I = \frac{\Delta F}{ \Delta t ~\Delta S ~\Delta \omega}$$
   ![width:16cm](images/ch05_辐射与能量平衡/日地距离-01.png)  
   <!-- ![bg right:50% 95%](images/ch05_辐射与能量平衡/日地距离-01.png)   -->
 
+> 了解即可
 
 ---
 
@@ -188,7 +189,7 @@ $$
 
 ![h:15cm w:23cm](images/ch05_辐射与能量平衡/太阳高度角-推导01.png)  
 
-> <span style='background-color:yellow'>修正：其中$\sigma$是赤纬角</span>
+<!-- > <span style='background-color:yellow'>修正：其中$\sigma$是赤纬角</span> -->
 
 <https://www.zhihu.com/question/51315574>
 <https://zhuanlan.zhihu.com/p/396807910>
