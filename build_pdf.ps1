@@ -38,10 +38,8 @@ $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #
 # build_marp "./ch03_位势高度与气压场.md"
 # build_marp "./ch04_第1讲-水汽通量与暴雨分析.md"
 # build_marp "./ch04_第2讲-辐散与垂直运动.md"
-
-# build_marp "ch02_基础的水文气象变量.md"
-build_marp "./ch4.1_辐射与能量平衡.md"
-build_marp "./ch4.2_辐射三定律.md"
+build_marp "./ch02_基础的气象变量.md"
+build_marp "./ch04_辐射与能量平衡.md"
 
 # build_marp "./ch05_太阳辐射.md"
 # build_marp "./ch06_大气环流.md"
