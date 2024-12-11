@@ -40,8 +40,8 @@ $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #
 # build_marp "./ch04_第2讲-辐散与垂直运动.md"
 
 # build_marp "ch02_基础的水文气象变量.md"
-build_marp "./ch3.1_辐射与能量平衡.md"
-build_marp "./ch3.2_辐射三定律.md"
+build_marp "./ch4.1_辐射与能量平衡.md"
+build_marp "./ch4.2_辐射三定律.md"
 
 # build_marp "./ch05_太阳辐射.md"
 # build_marp "./ch06_大气环流.md"
