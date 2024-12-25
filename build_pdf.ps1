@@ -43,7 +43,7 @@ $options = "--pdf --pdf-outlines true --pdf-outlines.pages false" #
 
 # build_marp "./ch05_太阳辐射.md"
 build_marp "./ch07_位势高度与气压场.md"
-# build_marp "./ch07_天气系统.md"
+build_marp "./ch08_大气环流.md"
 
 # build_marp "./地信研究生_现代气候学_part1.md"
 # build_marp "./地信研究生_现代气候学_part2.1.md"
