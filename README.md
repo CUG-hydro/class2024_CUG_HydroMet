@@ -48,3 +48,6 @@
 - ncl水汽通量计算：<https://github.com/CUG-hydro/IVT>
 
 - python位势高度、风场绘图：<https://github.com/CUG-hydro/CUG-HydroMeteorology.py>
+
+![](./images/Figure1_IVT_climatology_2000-2024.png)
+**图1**. ERA5 2000-2024水汽通量与水汽通量散度（kg m-2 s-1）。
