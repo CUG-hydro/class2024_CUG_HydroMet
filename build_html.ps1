@@ -26,7 +26,7 @@ function build_marp{
   $theme = "./themes/beamer.css"
   $fout = ($fin).Replace(".md", ".html")
 
-  $fin = ReplaceStringInFile $fin "images/" $baseUrl
+  # $fin = ReplaceStringInFile $fin "images/" $baseUrl
   # -c .marprc.yml # lead to theme failed
   $cmd = "marp $fin -o docs/$fout --html --allow-local-files --theme $theme $options"
 
@@ -51,17 +51,17 @@ $options = ""
 # build_marp "ch01_补充_天气学网站.md"
 # build_marp "ch01_补充_全球气候变化.md"
 # build_marp "ch01_绪论.md"
-# build_marp "ch00_课程介绍.md"
-build_marp "index.md"
+build_marp "ch00_课程介绍.md"
+# build_marp "index.md"
 # pandoc README.md -o docs/README.html
 
 # build_marp "./examples/high_level.md" "beamer_high"
 # build_marp "./examples/low_level.md" "beamer_low"
 # build_marp "./ch02_大气的基本特征.md"
 # build_marp "./ch03_位势高度与气压场.md"
-build_marp "./ch04_第1讲-水汽通量与暴雨分析.md"
+# build_marp "./ch04_第1讲-水汽通量与暴雨分析.md"
 
-build_marp "./ch04_第2讲-辐散与垂直运动.md"
+# build_marp "./ch04_第2讲-辐散与垂直运动.md"
 
 # build_marp "./ch05_第1讲-辐射与能量平衡.md"
 # build_marp "./ch05_第2讲-热浪研究方法.md"
